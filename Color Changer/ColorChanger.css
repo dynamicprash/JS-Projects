@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+
+}
+
+.Container{
+    height: 200px;
+    width: 500px;
+    border: 1px solid rgb(249, 157, 157);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+}
+
+#red,#green{
+    background-color: aqua;
+}
