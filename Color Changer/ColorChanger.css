@@ -1,20 +1,80 @@
-h1{
-    text-align: center;
-
+*{
+    
 }
 
+html, body {
+    height: 100%; /* Make html and body take full viewport height */
+    background-color: black;
+}
+
+h1{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+
+}
+.MainContainer{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 .Container{
-    height: 200px;
-    width: 500px;
+    height: 100px;
+    width: 600px;
     border: 1px solid rgb(249, 157, 157);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 20px;
     gap: 10px;
+    box-shadow: 0px 4px 5px white;
 }
 
-#red,#green{
-    background-color: aqua;
+.color{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 2px 4px white;
+    
+}
+.color:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 8px rgb(212, 208, 208);
+    cursor: pointer;
+
+}
+#red{
+    color: red;
+}
+#blue{
+    color: blue;
+}
+#green{
+    color: green;
+}
+#yellow{
+    color: gold;
+}
+
+
+@media (max-width: 600px) {
+  .Container {
+    flex-direction: column;
+    height: 600px;
+    padding: 5px;
+    width: 100px;
+  }
+  #red, #blue, #yellow,#green, #black{
+    
+    width: 100%;
+    
+}
 }
