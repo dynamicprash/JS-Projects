@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant Paudel</title>
+    <link rel="stylesheet" href="BmiCalculator.css">
+</head>
+<body>
+    <div class="Body">
+        <div class="heading">
+            <h1>BMI - Know your Health!!</h1>
+        </div>
+        <div class="calculator">
+            <div class="inputData">
+                <fieldset>
+                    <legend>BMI Values</legend>
+                    <label for="age">Age:&nbsp; &nbsp;</label>
+                    <input type="text" name="age" id="age" placeholder="Only enter Numbers"><br> 
+                    <br>
+                    <label for="height">Height:</label>
+                    <input type="text" name="height" id="height" placeholder="Only enter Numbers">
+                    <br>
+                    <br>
+                    <div class="Submit">
+                        <button onclick="Submit()">Calculate</button>
+                    </div>
+                    
+
+                </fieldset>
+                
+            </div>
+            <div class="outputData" hidden>  Your Score is &nbsp; &nbsp;<span class="value"> 18.93%</span>  </div>
+            <div class="gedeSheet">
+                <table border="1px" style="width: 400px; border-collapse: collapse" >
+                    <tr>
+                        <th id = "result">Result</th>
+                        <th id="status">Status</th>
+                    </tr>
+                    <tr>
+                        <td id = "result">Underweight ( < 18.5)</td>
+                        <td id="status1"></td>
+                    </tr>
+                    <tr>
+                        <td id = "result">Normal Weight (18.5 - 25.9)</td>
+                        <td id="status2"></td>
+                    </tr>
+                    <tr>
+                        <td id = "result">Overweight (25 - 29.9)</td>
+                        <td id="status3"></td>
+                    </tr>
+                    <tr>
+                        <td id = "result">Obese Class I (30 - 34.9)</td>
+                        <td id="status4"></td>
+                    </tr>
+                    <tr>
+                        <td id = "result">Obese Class I (35 - 39.9)</td>
+                        <td id="status5"></td>
+                    </tr>
+                    <tr>
+                        <td id = "result">Obese Class I ( > 40)</td>
+                        <td id="status6"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="BmiCalculator.js"></script>
+</body>
+</html>
